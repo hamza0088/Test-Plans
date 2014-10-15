@@ -11,11 +11,11 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Load Test ~ Prod Household. Purchase CONTENTS ONLY using Monthly" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Load Test ~ Prod Household. Reach Product Page" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">5</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">50</stringProp>
         <stringProp name="ThreadGroup.ramp_time">60</stringProp>
@@ -1223,7 +1223,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
-            <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1250,7 +1249,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
             </value>
           </objProp>
           <objProp>
-            <name></name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1282,7 +1280,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
         <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
-            <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1309,7 +1306,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
             </value>
           </objProp>
           <objProp>
-            <name></name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1341,7 +1337,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
         <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
-            <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1368,7 +1363,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
             </value>
           </objProp>
           <objProp>
-            <name></name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1400,7 +1394,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
-            <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1427,7 +1420,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
             </value>
           </objProp>
           <objProp>
-            <name></name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
@@ -1459,7 +1451,6 @@ vars.put(&quot;firstname&quot;,formattedDayOfWeek);
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
-            <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
               <time>true</time>
               <latency>true</latency>
